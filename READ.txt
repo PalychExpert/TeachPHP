@@ -48,3 +48,9 @@ git log --oneline --all --fraph
 
 Посмотреть про коммит (автор и т.п)
 git cat-file -p ed9c1e3
+
+Сделать ключи, забрать репозиторий к себе на комп.
+mkdir ~/.ssh
+ssh-keygen.exe -t rsa -b 4096 -C "apl_job@mail.ru"
+ssh -T -i ~/.ssh/id_rsa git@github.com
+git clone git@github.com:PalychExpert/Localhost.git
